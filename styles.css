@@ -1,3 +1,62 @@
 body{
     background-color: #A8A9A8;
+    font-family: serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+    line-height: 2em;
+}
+
+/*En la consigna dice id=post, pero no existe nada con id=post
+entonces utilice los que tienen la clase posts*/
+.posts > article, footer > section:first-child  {
+    border: 2px dotted;
+    border-color: #CCCCCC;
+}
+
+
+footer >section> form >.fields>.field>input:hover, textarea:hover{
+    background-color: green;
+}
+
+nav{
+   position: sticky;
+   top:0px;
+   
+}
+
+nav > ul, li{
+    padding: 10px;
+    display: inline;
+    
+}
+
+/*En la consigna dice id=post, pero no existe nada con id=post
+entonces utilice los que tienen la clase posts*/
+.posts > article{
+    display: inline-block;
+    width: 49.8%;
+    padding-left:1vw ;
+    padding-right:1vw ;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+footer >section> form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
